@@ -1,4 +1,10 @@
 .hero-text {
+  max-width: 295px;
+  color: var(--white-color);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105;
 }
 
 .hero-button {
@@ -32,6 +38,9 @@
     line-height: 1.55;
   }
 }
-
+.hero-icon {
+  background-color: var(--white-color);
+}
 .icon-arrow {
+  fill: var(--logo-color);
 }
