@@ -5,6 +5,8 @@
   --light-green-color: #D4FDE1;
   --accent-color: #BEE8CC;
   --gray-color: #F3F5F6;
+  --dark-gray-color: rgba(255, 255, 255, 0.40);
+  --pale-color: rgba(255, 255, 255, 0.70);
   --white-color: #FFF;
   --primary-font-family: 'Manrope', sans-serif;
 }

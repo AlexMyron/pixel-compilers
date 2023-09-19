@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  padding: 0 20px;
+  padding: 0 20px 80px;
   margin-left: auto;
   margin-right: auto;
   max-width: 375px;
@@ -16,14 +16,14 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 30px;
+    padding: 0 30px 100px;
     max-width: 768px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    padding: 0 64px;
+    padding: 0 64px 150px;
     max-width: 1152px;
   }
 }
