@@ -147,6 +147,11 @@
   cursor: pointer;
 }
 
+.lessons__button:hover,
+.lessons__button:focus {
+  
+}
+
 @media (min-width: 768px) {
   .lessons__button {
     min-height: 60px;
