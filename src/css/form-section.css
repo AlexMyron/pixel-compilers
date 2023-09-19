@@ -1,0 +1,16 @@
+.application__title {
+    margin-bottom: 14px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.125em;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.application__title .title-accent::before {
+    display: none;
+}
+
+.application__about {
+    display: none;
+}
