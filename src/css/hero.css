@@ -1,0 +1,37 @@
+.hero-text {
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 295px;
+  min-height: 52px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  color: var(--white-color);
+  background-color: var(--logo-color);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-hover);
+}
+.hero-button:active {
+  color: var(--logo-color);
+  background-color: var(--white-color);
+}
+
+@media (min-width: 768px) {
+  .hero-button {
+    max-width: 306px;
+    min-height: 60px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
+
+.icon-arrow {
+}
