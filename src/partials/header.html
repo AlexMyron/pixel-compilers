@@ -1,3 +1,143 @@
+<!-- Header -->
 <header class="header">
-  Header
+  <div class="flex-between container">
+    <nav class="header-nav">
+      <a class="logo link logo-english" href="./index.html"
+        >english<span class="logo logo-excellence">excellence.</span>
+      </a>
+      <ul class="nav-ul list">
+        <li class="nav-li">
+          <a class="site-nav-a link current" href="">About us</a>
+        </li>
+        <li class="nav-li">
+          <a class="site-nav-a link" href="">Our lessons</a>
+        </li>
+        <li class="nav-li">
+          <a class="site-nav-a link" href="">Teachers</a>
+        </li>
+        <li class="nav-li">
+          <a class="site-nav-a link" href="">Reviews</a>
+        </li>
+        <li class="nav-li">
+          <a class="site-nav-a link" href="">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="contacts">
+      <ul class="flex-center list contact-icons-ul">
+        <li class="contact-icon-li">
+          <a
+            class="flex-center contact-icon-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+          >
+            <svg class="contact-icon" width="28" height="28">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="contact-icon-li">
+          <a
+            class="flex-center contact-icon-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+          >
+            <svg class="contact-icon" width="28" height="28">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="contact-icon-li">
+          <a
+            class="flex-center contact-icon-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+          >
+            <svg class="contact-icon" width="28" height="28">
+              <use href="./images/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button
+      class="menu-btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu-icon" width="32" height="32">
+        <use href="../images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
+
+<!-- Menu -->
+<div class="backdrop is-hidden js-menu-backdrop">
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="modal-btn-icon" width="32" height="32">
+        <use href="../images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="menu-wrapper menu-main">
+      <ul class="menu-ul list">
+        <li class="menu-li">
+          <a class="site-nav-a link" href="">About us</a>
+        </li>
+        <li class="menu-li">
+          <a class="site-nav-a link" href="">Our lessons</a>
+        </li>
+        <li class="menu-li">
+          <a class="site-nav-a link" href="">Teachers</a>
+        </li>
+        <li class="menu-li">
+          <a class="site-nav-a link" href="">Reviews</a>
+        </li>
+        <li class="menu-li">
+          <a class="site-nav-a link" href="">Contact us</a>
+        </li>
+      </ul>
+
+      <div class="menu-wrapper">
+        <ul class="flex-center list contact-icons-ul menu-icons-list">
+          <li class="contact-icon-li">
+            <a
+              class="flex-center contact-icon-link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+            >
+              <svg class="contact-icon" width="28" height="28">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-icon-li">
+            <a
+              class="flex-center contact-icon-link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              <svg class="contact-icon" width="28" height="28">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-icon-li">
+            <a
+              class="flex-center contact-icon-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+            >
+              <svg class="contact-icon" width="28" height="28">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
