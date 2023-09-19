@@ -99,12 +99,13 @@
 
   display: flex;
   align-items: center;
-  padding: 14px 8px;
+  padding: 14px;
   gap: 8px;
 }
 
 @media (min-width: 768px) {
   .reviews__student {
+    padding: 14px 16px;
     border-radius: 15px;
   }
 }
