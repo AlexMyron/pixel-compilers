@@ -1,0 +1,146 @@
+.reviews__title {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.125em;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .reviews__title {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+}
+
+.reviews__info {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7em;
+
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .reviews__info {
+    font-size: 18px;
+    line-height: 1.67em;
+
+    margin-bottom: 64px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews__info {
+    padding: 0 200px;
+  }
+}
+
+.reviews__list {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .reviews__list {
+    gap: 32px;
+  }
+}
+
+.reviews__element {
+  border-radius: 16px;
+  background: var(--gray-color);
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .reviews__element {
+    width: 336px;
+    border-radius: 30px;
+
+    padding: 32px 16px;
+  }
+}
+
+.reviews__element:nth-child(2),
+.reviews__element:nth-child(3) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .reviews__element:nth-child(2) {
+    display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews__element:nth-child(3) {
+    display: flex;
+  }
+}
+
+.reviews__image {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.reviews__student {
+  height: 78px;
+  border-radius: 8px;
+  background: var(--logo-color);
+
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .reviews__student {
+    padding: 14px 16px;
+    border-radius: 15px;
+  }
+}
+
+.reviews__text_cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__student_name {
+  color: var(--white-color);
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+}
+
+.reviews__student_title {
+  color: var(--dark-gray-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+.reviews__text {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7em;
+
+  padding: 20px 14px;
+}
+
+@media (min-width: 768px) {
+  .reviews__text {
+    padding: 32px 16px 8px;
+    font-size: 16px;
+  }
+}
