@@ -145,11 +145,7 @@
   background-color: var(--logo-color);
   border-radius: 12px;
   cursor: pointer;
-}
-
-.lessons__button:hover,
-.lessons__button:focus {
-  
+  transition: background-color .3s ease, color .3s ease;
 }
 
 @media (min-width: 768px) {
@@ -162,6 +158,18 @@
 
 .standart .lessons__button {
   border: 1px solid var(--dark-gray-color);
+}
+
+.lessons__button:hover,
+.lessons__button:focus {
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+
+.standart .lessons__button:hover,
+.standart .lessons__button:focus {
+  color: var(--logo-color);
+  background-color: var(--white-color);
 }
 
 .standart .lessons__name,
