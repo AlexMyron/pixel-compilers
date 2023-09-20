@@ -58,10 +58,8 @@
     }
 }
 
-img {
-    margin: auto;
-    display: block;
-    margin-bottom: 16px;
+.teacher__image {
+    margin: 0 auto 16px;
 }
 
 .teacher {
