@@ -42,7 +42,7 @@
 }
 .hero-link:hover,
 .hero-link:focus {
-  background-color: var(--button-hover);
+  background-color: var(--green-color);
 }
 .hero-link:active {
   color: var(--logo-color);
