@@ -67,7 +67,7 @@
   font-family: var(--primary-font-family);
   font-size: 14px;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 1.3em;
   color: var(--primary-color);
   transition: color var(--tran-fast);
 }
@@ -103,14 +103,13 @@
 }
 .contact-icon-li {
   gap: 24px;
-  width: 44px;
-  height: 44px;
   border-radius: 10px;
-  border: 1px solid rgba(18, 20, 23, 0.1);
+  border: 1px solid var(--border-color);
+  transition: border var(--tran-fast);
 }
 .contact-icon-link {
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   background-color: var(--primary-brand);
   border-radius: 10px;
   cursor: pointer;
@@ -120,6 +119,11 @@
   fill: var(--primary-color);
   opacity: 0.8;
   transition: fill var(--tran-fast);
+}
+
+.contact-icon-li:hover,
+.contact-icon-li:focus {
+  border: 1px solid var(--border-active);
 }
 
 .contact-icon-link:hover svg,
@@ -157,7 +161,7 @@
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: var(--backdrop-color);
   transition: opacity var(--tran-fast), visibility var(--tran-fast);
 }
 .is-hidden {
@@ -244,7 +248,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 1.3em;
   transition: color var(--tran-fast);
 }
 .menu-li a:hover,
@@ -252,13 +256,20 @@
   color: var(--accent-color);
 }
 .menu-icons-list li {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-on-green);
+  transition: border var(--tran-fast);
 }
 .menu-icons-list svg {
   fill: var(--white-color);
   opacity: 0.8;
   transition: opacity var(--tran-fast);
 }
+
+.menu-icons-list li:hover,
+.menu-icons-list li:focus {
+  border: 1px solid var(--pale-color);
+}
+
 .menu-icons-list a:hover svg,
 .menu-icons-list a:focus svg {
   fill: var(--white-color);
