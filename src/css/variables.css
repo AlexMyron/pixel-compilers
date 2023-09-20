@@ -2,13 +2,18 @@
   --primary-color: #121417;
   --text-color: rgba(18, 20, 23, 0.5);
   --logo-color: #4dc274;
-  --green-color: #38AE5F;
+  --green-color: #38ae5f;
   --light-green-color: #d4fde1;
   --accent-color: #bee8cc;
   --gray-color: #f3f5f6;
   --dark-gray-color: rgba(255, 255, 255, 0.4);
   --pale-color: rgba(255, 255, 255, 0.7);
   --white-color: #fff;
+  --border-color: rgba(18, 20, 23, 0.1);
+  --border-active: rgba(77, 194, 116, 0.1);
+  --border-on-green: rgba(255, 255, 255, 0.1);
+  --backdrop-color: rgba(46, 47, 66, 0.4);
+
   --primary-font-family: 'Manrope', sans-serif;
 
   --tran-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
