@@ -16,10 +16,24 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
     isMenuOpen
       ? enableBodyScroll(document.body)
       : disableBodyScroll(document.body);
+
+    const isMacOS = /Mac|iPod|iPhone|iPad/.test(navigator.userAgent);
+    if (!isMacOS) {
+      if (!isMenuOpen) {
+        document.body.style.width = '100wv';
+        document.body.style.borderRight = '22px solid transparent';
+      } else {
+        document.body.style.width = 'auto';
+        document.body.style.borderRight = 'none';
+      }
+    }
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  backdrop.addEventListener('click', ({ target, currentTarget }) => {
+    currentTarget === target && toggleMenu();
+  });
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
