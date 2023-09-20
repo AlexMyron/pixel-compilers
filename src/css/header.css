@@ -265,7 +265,7 @@
 .menu-li a:hover,
 .menu-li a:focus {
   color: var(--accent-color);
-  /* animation: tracking-in-contract var(--tran-list); */
+  animation: tracking-in-contract var(--tran-list);
 }
 .menu-icons-list li {
   border: 1px solid var(--border-on-green);
