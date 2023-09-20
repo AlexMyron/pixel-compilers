@@ -6,24 +6,6 @@
 }
 /* basic variables end */
 
-/* basic styles start */
-ul, ol {
-    padding: 0;
-    margin: 0;
-}
-
-.card-set {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: var(--indent-row);
-    column-gap: var(--indent-col);
-  }
-
-.card-set-item {
-    flex-basis: calc((100% - var(--indent-col) * (var(--card-items) - 1)) / var(--card-items));
-  }
-/* basic styles end */
-
 .about-wrapper {
     display: flex;
     flex-direction: column;
@@ -54,7 +36,6 @@ ul, ol {
         background-image: url('../images/memoji@2x.png');
     }
 }
-
 @media only screen and (max-width: 767px) {
     .about-wrapper::after {
         height: 313px;
