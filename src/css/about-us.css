@@ -1,0 +1,101 @@
+/* basic variables start */
+.about-us-section {
+--indent-col: 32px;
+--indent-row: 32px;
+--card-items: 4;
+}
+/* basic variables end */
+
+/* basic styles start */
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--indent-row);
+    column-gap: var(--indent-col);
+  }
+
+.card-set-item {
+    flex-basis: calc((100% - var(--indent-col) * (var(--card-items) - 1)) / var(--card-items));
+  }
+/* basic styles end */
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-wrapper::after {
+    content: "";
+    border-radius: 30px;
+    background: var(--logo-color);
+    background-image: url('../images/memoji.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 172.324px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .about-wrapper::after {
+        background-image: url('../images/memoji@2x.png');
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about-wrapper::after {
+        height: 313px;
+        flex-shrink: 0;
+        display: block;
+        min-width: 100%;
+    }
+}
+
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    counter-reset: el-counter 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.about-list-el::before {
+    content: "0" counter(el-counter);
+    counter-increment: el-counter;
+    display: block;
+    margin-bottom: 16px;
+    /* text */
+    color: var(--logo-color);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.14em;
+    letter-spacing: -0.56px;
+}
+
+.about-list-el {
+    /* text */
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.20em;
+    letter-spacing: -0.4px;
+    /* location */
+    padding: 32px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--gray-color);
+    --indent-col: 20px;
+    --indent-row: 20px;
+    --card-items: 1;
+}
+
