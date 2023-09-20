@@ -31,6 +31,12 @@ ul, ol {
     width: 100%;
     margin: 0 auto;
 }
+@media only screen and (min-width: 768px) {
+    .about-wrapper {
+        width: 704px;
+        flex-direction: column;
+    }
+}
 
 .about-wrapper::after {
     content: "";
@@ -57,6 +63,15 @@ ul, ol {
         min-width: 100%;
     }
 }
+@media only screen and (min-width: 768px) {
+    .about-wrapper::after {
+        height: 243px;
+        flex-shrink: 0;
+        flex-grow: 1;
+        display: block;
+        min-width: 100%;
+    }
+}
 
 .about-list {
     display: flex;
@@ -67,6 +82,11 @@ ul, ol {
     padding: 0;
     margin: 0;
     width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .about-wrapper {
+        width: 704px;
+    }
 }
 
 .about-list-el::before {
@@ -98,4 +118,12 @@ ul, ol {
     --indent-row: 20px;
     --card-items: 1;
 }
+@media only screen and (min-width: 768px) {
+    .about-list-el {
+        --indent-col: 20px;
+        --indent-row: 20px;
+        --card-items: 2;
+    }
+}
+
 
