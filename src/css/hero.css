@@ -38,6 +38,7 @@
   background-color: var(--logo-color);
   border-radius: 12px;
   cursor: pointer;
+  transition: var(--tran-fast);
 }
 .hero-link:hover,
 .hero-link:focus {
@@ -59,6 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--tran-fast);
 }
 .hero-icon:hover,
 .hero-icon:focus,
@@ -69,6 +71,7 @@
 }
 .icon-arrow {
   fill: var(--logo-color);
+  transition: var(--tran-fast);
 }
 
 /* Media mobile */
