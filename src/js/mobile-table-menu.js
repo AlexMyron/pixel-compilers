@@ -16,6 +16,10 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
     isMenuOpen
       ? enableBodyScroll(document.body)
       : disableBodyScroll(document.body);
+
+    const currentWidth = document.body.offsetWidth;
+    const newWidth = isMenuOpen ? currentWidth - 10 : currentWidth + 10;
+    document.body.style.width = `${newWidth}px`;
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
