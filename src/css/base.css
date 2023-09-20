@@ -54,3 +54,14 @@ body {
     top: 60%;
   }
 }
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--indent-row);
+  column-gap: var(--indent-col);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--indent-col) * (var(--card-items) - 1)) / var(--card-items));
+}
