@@ -1,8 +1,14 @@
+.proposal {
+  padding-bottom: 80px;
+}
 .proposal .container {
+  position: relative;
   border-radius: 16px;
   background: linear-gradient(85deg, #4dc262 2.25%, #bee8cc 131.25%);
   max-width: 335px;
   margin: 0px auto;
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 @media screen and (max-width: 769.98px) {
   .proposal .container {
@@ -35,10 +41,24 @@
   color: var(--accent-color);
 }
 
-.proposal .main-container {
+.proposal .cards-container {
+  position: relative;
+  max-width: 367px;
+  padding: 36px 25px;
+  margin: 0px -37px 0px -35px;
+}
+
+.proposal .card-thumb {
+  position: relative;
   width: 100%;
-  background-color: var(--white-color);
   border-radius: 16px;
+  max-width: 295px;
+  margin: 0 auto;
+}
+
+.proposal .main.card-thumb {
+  z-index: 2;
+  background-color: var(--white-color);
   padding: 40px 21px 40px 19px;
 }
 
@@ -52,24 +72,68 @@
 }
 
 .proposal .card-item {
+  display: inline-flex;
+  align-items: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.42;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
+  gap: 8px;
+}
+
+.proposal .card-item::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6667 5L7.50001 14.1667L3.33334 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+}
+
+.proposal .card-item .card-text {
+  display: inline-block;
+  width: calc(100% - 28px);
 }
 
 .proposal .leave-app {
   display: block;
   border-radius: 12px;
   background: var(--logo-color);
-  width: 100%;
-  padding: 16px 64px;
+  min-width: 255px;
+  padding: 14px 58px;
 
   color: var(--white-color);
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.71;
+}
+
+.proposal .back.card-thumb {
+  position: absolute;
+  height: calc(100% - 72px);
+  width: calc(100% - 50px);
+  top: 36px;
+  left: 36px;
+  z-index: 1;
+  background-color: var(--light-green-color);
+  transform: rotate(-9deg);
+}
+
+.proposal .back-back.card-thumb {
+  position: absolute;
+  height: calc(100% - 72px);
+  width: calc(100% - 50px);
+  top: 36px;
+  left: 36px;
+  z-index: 0;
+  background: rgba(255, 255, 255, 0.5);
+  transform: rotate(11deg);
 }
