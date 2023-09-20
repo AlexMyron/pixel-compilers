@@ -17,4 +17,8 @@
   --primary-font-family: 'Manrope', sans-serif;
 
   --tran-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --tran-icons: 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  --tran-list: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  --tran-menu: 0.6s ease-in-out both;
+  --tran-btn: 0.3s linear infinite both;
 }
