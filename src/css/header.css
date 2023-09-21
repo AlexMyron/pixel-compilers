@@ -78,12 +78,8 @@
 .site-nav-a:hover,
 .site-nav-a:focus {
   color: var(--logo-color);
-  /* animation: tracking-in-contract var(--tran-list); */
 }
-.current {
-  color: var(--logo-color);
-}
-.current::after {
+.site-nav-a::after {
   content: '';
   position: absolute;
   bottom: -1px;
@@ -91,7 +87,15 @@
   width: 37px;
   height: 2px;
   border-radius: 2px;
-  background: var(--logo-color);
+  background-color: var(--logo-color);
+
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform var(--tran-fast);
+}
+.site-nav-a:hover::after,
+.site-nav-a:focus::after {
+  transform: scaleX(100%);
 }
 .contacts {
   font-style: normal;

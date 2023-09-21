@@ -1,0 +1,4 @@
+.scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
