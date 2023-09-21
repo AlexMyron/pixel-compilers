@@ -20,7 +20,6 @@
   background: linear-gradient(85deg, #4dc262 2.25%, #bee8cc 131.25%);
   max-width: 335px;
   margin: 0px auto;
-  overflow: hidden;
   padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
