@@ -53,6 +53,10 @@
   font-weight: 700;
   color: var(--primary-color);
 }
+.logo:hover,
+.logo:focus {
+  animation: flip-vertical-right var(--tran-icons);
+}
 .logo-english {
   color: var(--primary-color);
 }
@@ -75,18 +79,22 @@
 .site-nav-a:focus {
   color: var(--logo-color);
 }
-.current {
-  color: var(--logo-color);
-}
-.current::after {
+.site-nav-a::after {
   content: '';
   position: absolute;
-  bottom: -1px;
   display: block;
   width: 37px;
   height: 2px;
   border-radius: 2px;
-  background: var(--logo-color);
+  background-color: var(--logo-color);
+
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform var(--tran-fast);
+}
+.site-nav-a:hover::after,
+.site-nav-a:focus::after {
+  transform: scaleX(100%);
 }
 .contacts {
   font-style: normal;
@@ -129,6 +137,7 @@
 .contact-icon-link:hover svg,
 .contact-icon-link:focus svg {
   fill: var(--logo-color);
+  animation: flip-vertical-right var(--tran-icons);
 }
 
 /* Mob-Tab Menu btn */
@@ -142,6 +151,10 @@
 .menu-icon > use {
   stroke: var(--primary-color);
   transition: stroke var(--tran-fast);
+}
+.menu-btn:hover,
+.menu-btn:focus {
+  animation: vibrate-2 var(--tran-btn);
 }
 .menu-btn:hover .menu-icon > use,
 .menu-btn:focus .menu-icon > use {
@@ -193,6 +206,7 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
+  animation: rotate-center var(--tran-menu);
 }
 .menu-toggle > svg {
   stroke: var(--white-color);
@@ -254,6 +268,7 @@
 .menu-li a:hover,
 .menu-li a:focus {
   color: var(--accent-color);
+  animation: tracking-in-contract var(--tran-list);
 }
 .menu-icons-list li {
   border: 1px solid var(--border-on-green);
@@ -274,4 +289,5 @@
 .menu-icons-list a:focus svg {
   fill: var(--white-color);
   opacity: 1;
+  animation: flip-vertical-right var(--tran-icons);
 }
