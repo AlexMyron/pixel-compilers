@@ -1,0 +1,40 @@
+.scroll-top-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  color: var(--logo-color);
+  background-color:  var(--white-color);
+  border: 1px solid var(--logo-color);;
+  border-radius: 100%;
+  transition: all .3s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-top-top:hover,
+.scroll-top-top:focus {
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+
+.scroll-top-top.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-top-top:not(.active) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-top-top .icon-arrow {
+  fill: currentColor;
+  transition: fill var(--tran-icons);
+  transform: rotateZ(180deg);
+}
