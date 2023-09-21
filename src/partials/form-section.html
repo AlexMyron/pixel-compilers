@@ -7,109 +7,115 @@
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
-    <div class="application__about">
-      <img 
-      srcset="./images/form_section/happy_girl.jpg 1x, ./images/form_section/happy_girl@2x.jpg 2x" 
-      src="./images/form_section/happy_girl.jpg" 
-      class=""
-      alt="Girl in headphones" 
-      width="597" 
-      height="537" />
-      <p>1000</p>
-      <p>
-        of our online English language lessons! This journey has been full of
-        discovery, growth and unforgettable moments, and we are happy to share
-        this joyful event with you.
-      </p>
+    <div class="application__wrap">
+      <div class="application__about">
+          <img
+          srcset="./images/form_section/happy_girl.png 1x, ./images/form_section/happy_girl@2x.png 2x"
+          src="./images/form_section/happy_girl.png"
+          class="application__about__img"
+          alt="Girl in headphones"
+          width="597"
+          height="537"
+          loading="lazy" 
+          />
+        <div class="application__about__description">
+          <h3 class="application__about__title">1000</h3>
+          <p class="application__about__text">
+            of our online English language lessons! This journey has been full of
+            discovery, growth and unforgettable moments, and we are happy to share
+            this joyful event with you.
+          </p>
+        </div>
+      </div>
+      <form class="application__form" name="application-form">
+        <input
+          class="application__input"
+          type="text"
+          name="user-name"
+          placeholder="Name"
+          pattern="[A-Za-z]{2,10}"
+        >
+        <input
+          class="application__input"
+          type="email"
+          name="user-email"
+          placeholder="Email"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        >
+        <input
+          class="application__input"
+          type="tel"
+          name="user-phone"
+          placeholder="Phone"
+          pattern="[0-9]{8,15}"
+        >
+        <textarea
+          class="application__comment"
+          name="user-comment"
+          id=""
+          rows="5"
+          placeholder="Comment"
+        ></textarea>
+        <h3 class="application__radio__title">Choose a teacher</h3>
+        <ul class="application__radio__container">
+          <li class="application__radio__box">
+            <label class="application__radio__label">
+              <input
+                class="application__radio__input visually-hidden"
+                name="choice"
+                type="radio"
+                checked
+              />
+              <div class="application__radio__custom"></div>
+              Maria
+            </label>
+          </li>
+          <li class="application__radio__box">
+            <label class="application__radio__label">
+              <input
+                class="application__radio__input visually-hidden"
+                name="choice"
+                type="radio"
+              />
+              <div class="application__radio__custom"></div>
+              Artem
+            </label>
+          </li>
+          <li class="application__radio__box">
+            <label class="application__radio__label">
+              <input
+                class="application__radio__input visually-hidden"
+                name="choice"
+                type="radio"
+              />
+              <div class="application__radio__custom"></div>
+              Ilona
+            </label>
+          </li>
+          <li class="application__radio__box">
+            <label class="application__radio__label">
+              <input
+                class="application__radio__input visually-hidden"
+                name="choice"
+                type="radio"
+              />
+              <div class="application__radio__custom"></div>
+              Volodymyr
+            </label>
+          </li>
+        </ul>
+        <button class="application__button" type="submit">Send</button>
+        <p class="application__description">
+          By clicking on “Send” button, you agree to our
+          <a
+            class="application__description__link"
+            href="../index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Privacy Policy</a
+          >, and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
     </div>
-    <form class="application__form" name="application-form">
-      <input 
-        class="application__input" 
-        type="text" 
-        name="user-name" 
-        placeholder="Name" 
-        pattern="[A-Za-z]{2,10}"
-      >
-      <input 
-        class="application__input" 
-        type="email" 
-        name="user-email" 
-        placeholder="Email" 
-        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-      >
-      <input 
-        class="application__input" 
-        type="tel" 
-        name="user-phone" 
-        placeholder="Phone" 
-        pattern="[0-9]{8,15}"
-      >
-      <textarea 
-        class="application__comment" 
-        name="user-comment" 
-        id="" 
-        rows="5" 
-        placeholder="Comment"
-      ></textarea>
-      <h3 class="application__radio__title">Choose a teacher</h3>
-      <ul class="application__radio__container">
-        <li class="application__radio__box">
-          <label class="application__radio__label">
-            <input
-              class="application__radio__input visually-hidden"
-              name="choice"
-              type="radio"
-              checked
-            />
-            <div class="application__radio__custom"></div>
-            Maria
-          </label>
-        </li>
-        <li class="application__radio__box">
-          <label class="application__radio__label">
-            <input
-              class="application__radio__input visually-hidden"
-              name="choice"
-              type="radio"
-            />
-            <div class="application__radio__custom"></div>
-            Artem
-          </label>
-        </li>
-        <li class="application__radio__box">
-          <label class="application__radio__label">
-            <input
-              class="application__radio__input visually-hidden"
-              name="choice"
-              type="radio"
-            />
-            <div class="application__radio__custom"></div>
-            Ilona
-          </label>
-        </li>
-        <li class="application__radio__box">
-          <label class="application__radio__label">
-            <input
-              class="application__radio__input visually-hidden"
-              name="choice"
-              type="radio"
-            />
-            <div class="application__radio__custom"></div>
-            Volodymyr
-          </label>
-        </li>
-      </ul>
-      <button class="application__button" type="submit">Send</button>
-      <p class="application__description">
-        By clicking on “Send” button, you agree to our
-        <a
-          class="application__description__link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          >Privacy Policy</a
-        >, and allow Promodo to use this information for marketing purposes.
-      </p>
-    </form>
   </div>
 </section>
