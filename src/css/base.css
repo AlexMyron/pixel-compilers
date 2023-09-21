@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font-family);
   font-size: 16px;
@@ -5,10 +9,27 @@ body {
   font-style: normal;
   color: var(--primary-color);
   background-color: var(--white-color);
+  cursor: default;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section {
+    margin-bottom: 150px;
+  }
 }
 
 .container {
-  padding: 0 20px 80px;
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
   max-width: 375px;
@@ -16,14 +37,14 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 30px 100px;
+    padding: 0 30px;
     max-width: 768px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    padding: 0 64px 150px;
+    padding: 0 64px;
     max-width: 1152px;
   }
 }
@@ -63,5 +84,43 @@ body {
 }
 
 .card-set-item {
-  flex-basis: calc((100% - var(--indent-col) * (var(--card-items) - 1)) / var(--card-items));
+  flex-basis: calc(
+    (100% - var(--indent-col) * (var(--card-items) - 1)) / var(--card-items)
+  );
+}
+
+.section-title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 1.125em;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+}
+
+.section-info {
+  margin-bottom: 40px;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.714em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .section-info {
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 1.67em;
+  }
+}
+@media (min-width: 1280px) {
+  .section-info {
+    margin: 0 auto 64px;
+    width: 665px;
+  }
 }
