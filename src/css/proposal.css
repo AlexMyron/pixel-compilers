@@ -1,3 +1,16 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .proposal {
   padding-bottom: 80px;
 }
@@ -9,11 +22,6 @@
   margin: 0px auto;
   overflow: hidden;
   padding-bottom: 40px;
-}
-@media screen and (max-width: 767.98px) {
-  .proposal .container {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
 }
 @media screen and (min-width: 768px) {
   .proposal .container {
@@ -176,7 +184,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6667 5L7.50001 14.1667L3.33334 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-image: url(../images/check.svg);
   background-size: 12px 12px;
   background-position: center;
   background-repeat: no-repeat;
