@@ -23,18 +23,38 @@
     content: "";
     border-radius: 30px;
     background: var(--logo-color);
-    background-image: url('../images/memoji.png');
+    background-image: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 172.324px;
+    background-size: 173px;
+    will-change: background-image, background-position;
+    animation: changeBg 5s cubic-bezier(0, 1.50, 0, 1) infinite normal;
 }
+
+@keyframes changeBg{
+    0%,100%  {
+        background-image: url('../images/memoji.webp');
+        background-position: center;
+    }
+    50% {
+        background-image: url('../images/memoji2.webp');
+        background-position: center;
+    }
+}
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .about-wrapper::after {
-        background-image: url('../images/memoji@2x.png');
+    @keyframes changeBg{
+        0%,100%  {
+            background-image: url('../images/memoji@2x.webp');
+        }
+        50% {
+            background-image: url('../images/memoji2@2x.webp');
+        }
     }
 }
+
 @media only screen and (max-width: 767px) {
     .about-wrapper::after {
         height: 313px;
