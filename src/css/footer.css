@@ -8,12 +8,12 @@
 }
 @media only screen and (min-width: 768px) {
   .footer-container {
-    padding: 32px 0 16px;
+    padding: 32px 30px 16px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .footer-container {
-    padding: 64px 0 24px;
+    padding: 64px 64px 24px;
   }
 }
 
@@ -25,6 +25,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 110px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer-wrapper {
+    margin-bottom: 64px;
   }
 }
 
