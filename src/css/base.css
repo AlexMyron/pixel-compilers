@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font-family);
   font-size: 16px;
@@ -5,6 +9,7 @@ body {
   font-style: normal;
   color: var(--primary-color);
   background-color: var(--white-color);
+  cursor: default;
 }
 
 .container {
@@ -63,5 +68,7 @@ body {
 }
 
 .card-set-item {
-  flex-basis: calc((100% - var(--indent-col) * (var(--card-items) - 1)) / var(--card-items));
+  flex-basis: calc(
+    (100% - var(--indent-col) * (var(--card-items) - 1)) / var(--card-items)
+  );
 }

@@ -49,3 +49,18 @@
     transform: translate(0);
   }
 }
+
+@keyframes socials-icon {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.85);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
