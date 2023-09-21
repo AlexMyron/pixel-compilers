@@ -21,7 +21,7 @@
     border-radius: 30px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .proposal .container {
     max-width: 1152px;
   }
@@ -46,6 +46,13 @@
     padding: 0 2px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .proposal .strong-text {
+    max-width: 776px;
+    font-size: 60px;
+    margin-bottom: 72px;
+  }
+}
 
 .proposal .highlight {
   color: var(--accent-color);
@@ -60,8 +67,13 @@
 @media screen and (min-width: 768px) {
   .proposal .cards-container {
     max-width: 754px;
-    padding: 36px 25px;
     margin: 0px -50px 0px -60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .proposal .cards-container {
+    max-width: 1152px;
+    margin: 0px -50px 0px -20px;
   }
 }
 
@@ -77,6 +89,11 @@
     max-width: 668px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .proposal .card-thumb {
+    max-width: 1024px;
+  }
+}
 
 .proposal .main.card-thumb {
   z-index: 2;
@@ -86,6 +103,24 @@
 @media screen and (min-width: 768px) {
   .proposal .main.card-thumb {
     padding: 65px 0px 63px 32px;
+    background: url(../images/proposal-books.png), var(--white-color);
+    background-repeat: no-repeat;
+    background-position: right -31px top 174px;
+    background-size: 214px 263px;
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .proposal .main.card-thumb {
+    background: url(../images/proposal-books@2x.png), var(--white-color);
+    background-repeat: no-repeat;
+    background-position: right -31px top 174px;
+    background-size: 214px 263px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .proposal .main.card-thumb {
+    padding: 64px;
+    background-position: right 0px top 129px;
   }
 }
 
@@ -101,6 +136,12 @@
   .proposal .list-name {
     font-size: 40px;
     margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .proposal .list-name {
+    font-size: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -121,6 +162,13 @@
     gap: 16px;
     margin-bottom: 16px;
   }
+}
+@media screen and (min-width: 1280px) {
+  .proposal .card-item {
+    font-size: 20px;
+  }
+}
+ {
 }
 
 .proposal .card-item::before {
@@ -153,6 +201,11 @@
     width: 405px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .proposal .card-item .card-text {
+    width: 610px;
+  }
+}
 
 .proposal .leave-app {
   display: block;
@@ -166,6 +219,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.71;
+  transition: background-color var(--tran-fast);
 }
 @media screen and (max-width: 767.98px) {
   .proposal .leave-app {
@@ -180,8 +234,18 @@
   }
 }
 
+.proposal .leave-app:hover,
+.proposal .leave-app:focus {
+  background-color: var(--green-color);
+}
+
 .proposal .list-cards {
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1280px) {
+  .proposal .list-cards {
+    margin-bottom: 22px;
+  }
 }
 
 .proposal .back.card-thumb {
@@ -204,20 +268,4 @@
   z-index: 0;
   background: rgba(255, 255, 255, 0.5);
   transform: rotate(11deg);
-}
-
-#proposal-books-img {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  #proposal-books-img {
-    display: block;
-    position: absolute;
-    width: 214px;
-    top: 174px;
-    right: -51px;
-    object-fit: cover;
-    object-position: center;
-    z-index: 0;
-  }
 }
