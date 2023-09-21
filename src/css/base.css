@@ -12,8 +12,24 @@ body {
   cursor: default;
 }
 
+.section {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section {
+    margin-bottom: 150px;
+  }
+}
+
 .container {
-  padding: 0 20px 80px;
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
   max-width: 375px;
