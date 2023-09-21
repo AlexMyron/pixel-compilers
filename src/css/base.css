@@ -37,14 +37,14 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 30px 100px;
+    padding: 0 30px;
     max-width: 768px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    padding: 0 64px 150px;
+    padding: 0 64px;
     max-width: 1152px;
   }
 }
