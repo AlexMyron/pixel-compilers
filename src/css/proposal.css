@@ -10,7 +10,7 @@
   overflow: hidden;
   padding-bottom: 40px;
 }
-@media screen and (max-width: 769.98px) {
+@media screen and (max-width: 767.98px) {
   .proposal .container {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
@@ -36,6 +36,16 @@
   line-height: 1.05em;
   margin: 40px 0;
 }
+@media screen and (min-width: 768px) {
+  .proposal .strong-text {
+    font-size: 60px;
+    font-style: normal;
+    line-height: 1.17;
+
+    margin-top: 64px;
+    padding: 0 2px;
+  }
+}
 
 .proposal .highlight {
   color: var(--accent-color);
@@ -47,6 +57,13 @@
   padding: 36px 25px;
   margin: 0px -37px 0px -35px;
 }
+@media screen and (min-width: 768px) {
+  .proposal .cards-container {
+    max-width: 754px;
+    padding: 36px 25px;
+    margin: 0px -50px 0px -60px;
+  }
+}
 
 .proposal .card-thumb {
   position: relative;
@@ -55,11 +72,21 @@
   max-width: 295px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .proposal .card-thumb {
+    max-width: 668px;
+  }
+}
 
 .proposal .main.card-thumb {
   z-index: 2;
   background-color: var(--white-color);
   padding: 40px 21px 40px 19px;
+}
+@media screen and (min-width: 768px) {
+  .proposal .main.card-thumb {
+    padding: 65px 0px 63px 32px;
+  }
 }
 
 .proposal .list-name {
@@ -69,6 +96,12 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .proposal .list-name {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
 }
 
 .proposal .card-item {
@@ -81,6 +114,13 @@
   letter-spacing: -0.02em;
   margin-bottom: 20px;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .proposal .card-item {
+    font-size: 20px;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 .proposal .card-item::before {
@@ -96,17 +136,29 @@
   background-color: var(--logo-color);
   border-radius: 50%;
 }
+@media screen and (min-width: 768px) {
+  .proposal .card-item::before {
+    width: 28px;
+    height: 28px;
+    background-size: 20px 20px;
+  }
+}
 
 .proposal .card-item .card-text {
   display: inline-block;
   width: calc(100% - 28px);
+}
+@media screen and (min-width: 768px) {
+  .proposal .card-item .card-text {
+    width: 405px;
+  }
 }
 
 .proposal .leave-app {
   display: block;
   border-radius: 12px;
   background: var(--logo-color);
-  min-width: 255px;
+
   padding: 14px 58px;
 
   color: var(--white-color);
@@ -114,6 +166,22 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.71;
+}
+@media screen and (max-width: 767.98px) {
+  .proposal .leave-app {
+    min-width: 255px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .proposal .leave-app {
+    font-size: 20px;
+    padding: 16px 54px;
+    width: 306px;
+  }
+}
+
+.proposal .list-cards {
+  margin-bottom: 16px;
 }
 
 .proposal .back.card-thumb {
@@ -136,4 +204,20 @@
   z-index: 0;
   background: rgba(255, 255, 255, 0.5);
   transform: rotate(11deg);
+}
+
+#proposal-books-img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  #proposal-books-img {
+    display: block;
+    position: absolute;
+    width: 214px;
+    top: 174px;
+    right: -51px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+  }
 }
