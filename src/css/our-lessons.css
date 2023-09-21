@@ -145,6 +145,10 @@
   background-color: var(--logo-color);
   border-radius: 12px;
   cursor: pointer;
+<<<<<<< Updated upstream
+=======
+  transition: background-color 0.3s ease, color 0.3s ease;
+>>>>>>> Stashed changes
 }
 
 @media (min-width: 768px) {
