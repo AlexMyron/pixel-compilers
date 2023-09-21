@@ -4,7 +4,7 @@
 }
 
 .footer-container {
-  padding: 40px 0 20px;
+  padding: 40px 20px 20px;
 }
 @media only screen and (min-width: 768px) {
   .footer-container {
