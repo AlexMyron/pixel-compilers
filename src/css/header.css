@@ -82,7 +82,6 @@
 .site-nav-a::after {
   content: '';
   position: absolute;
-  bottom: -1px;
   display: block;
   width: 37px;
   height: 2px;
