@@ -1,0 +1,120 @@
+<<<<<<< Updated upstream
+=======
+.teachers__title {
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.125em;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .teachers__title {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+}
+
+.teachers__info {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.714em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .teachers__info {
+    font-size: 18px;
+    line-height: 1.67em;
+    margin: 0 auto 64px;
+    width: 709px;
+  }
+}
+
+.teachers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .teachers__list {
+    justify-content: center;
+    gap: 32px;
+  }
+}
+.teachers__team:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  width: 232px;
+  height: 318px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--logo-color);
+}
+
+@media (min-width: 768px) {
+  .teachers__team {
+    max-width: 272px;
+    flex-basis: calc((100% - 32px * 1) / 2);
+  }
+  .teachers__team:hover {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 335px;
+    height: 270px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--logo-color);
+  }
+}
+
+@media (min-width: 1280px) {
+  .teachers__team {
+    flex-basis: calc((100% - 32px * 3) / 4);
+  }
+  .teachers__team:hover {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 272px;
+    height: 297px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--logo-color);
+  }
+}
+
+.teacher__image {
+  margin: 0 auto 16px;
+}
+
+.teacher {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.teachers_subtitle {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.714em;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .teachers_subtitle {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
+>>>>>>> Stashed changes
