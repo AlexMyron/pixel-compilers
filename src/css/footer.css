@@ -217,7 +217,15 @@
   gap: 18px;
 }
 
-.copyright-link {
+.copyright-btn {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+
+  transition: color var(--tran-fast);
+}
+.copyright-btn:hover,
+.copyright-btn:focus {
   transition: color var(--tran-fast);
 }
 
