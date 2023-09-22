@@ -1,5 +1,6 @@
 (() => {
   const refs = {
+    body: document.querySelector('body'),
     teachersRef: document.querySelectorAll('[data-modal-teachers-open]'),
     closeModalBtn: document.querySelector('[data-modal-teachers-close]'),
     modal: document.querySelector('[data-modal-teachers]'),
@@ -12,5 +13,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('dev-modal-is-open');
   }
 })();
