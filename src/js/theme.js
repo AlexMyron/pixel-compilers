@@ -21,7 +21,7 @@ function setTheme(theme) {
     document.documentElement.style.setProperty('--gray-color', '#f3f5f6');
     document.documentElement.style.setProperty(
       '--border-color',
-      'rgba(18, 20, 23, 0.1);'
+      'rgba(18, 20, 23, 0.1)'
     );
     document.documentElement.style.setProperty(
       '--dark-gray-color',
@@ -57,19 +57,28 @@ function getSavedTheme() {
   return savedTheme || 'light';
 }
 
+function setThemeIcon(theme) {
+  const iconMoon = document.querySelector('.icon-theme-moon');
+  const iconSun = document.querySelector('.icon-theme-sun');
+
+  if (theme === 'light') {
+    iconSun.classList.add('is-none');
+    iconMoon.classList.remove('is-none');
+  } else {
+    iconSun.classList.remove('is-none');
+    iconMoon.classList.add('is-none');
+  }
+}
+
 const currentTheme = getSavedTheme();
 setTheme(currentTheme);
+setThemeIcon(currentTheme);
 
 const toggleThemeButton = document.querySelector('.toggle-theme-btn');
-const useElement = document.querySelector('.icon-theme use');
 
 toggleThemeButton.addEventListener('click', () => {
   const currentTheme = getSavedTheme();
   const newTheme = currentTheme === 'light' ? 'dark' : 'light';
   setTheme(newTheme);
-
-  const currentHref = useElement.getAttribute('href');
-  currentHref === './images/icons.svg#icon-sun'
-    ? useElement.setAttribute('href', './images/icons.svg#icon-moon')
-    : useElement.setAttribute('href', './images/icons.svg#icon-sun');
+  setThemeIcon(newTheme);
 });
