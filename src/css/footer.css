@@ -74,8 +74,7 @@
 
 .footer-contacts-text {
   margin-bottom: 4px;
-
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--pale-color);
 }
 
 .footer-contacts-link {
