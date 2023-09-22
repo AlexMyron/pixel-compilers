@@ -34,12 +34,6 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .reviews__info {
-    padding: 0 200px;
-  }
-}
-
 .reviews__list {
   display: flex;
 }

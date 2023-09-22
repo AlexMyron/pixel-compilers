@@ -217,3 +217,12 @@
   display: flex;
   gap: 18px;
 }
+
+.copyright-link {
+  transition: color var(--tran-fast);
+}
+
+.copyright-link:hover,
+.copyright-link:focus {
+  color: var(--logo-color);
+}
