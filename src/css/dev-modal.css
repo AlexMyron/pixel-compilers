@@ -25,6 +25,11 @@
   background-color: var(--white-color);
   border-radius: 30px;
 }
+@media screen and (max-width: 380px) {
+  .dev-modal {
+    padding: 20px 10px;
+  }
+}
 
 body.dev-modal-is-open {
   overflow: hidden;
@@ -103,13 +108,6 @@ body.dev-modal-is-open {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.4px;
-}
-
-.dev-img-wrapper {
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  border-radius: 50%;
 }
 
 .dev-modal-img {
