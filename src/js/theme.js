@@ -58,10 +58,16 @@ function getSavedTheme() {
 }
 
 function setThemeIcon(theme) {
-  const useElement = document.querySelector('.icon-theme use');
-  theme === 'light'
-    ? useElement.setAttribute('href', '/pixel-compilers/assets/icons-18d803d1.svg#icon-moon')
-    : useElement.setAttribute('href', '/pixel-compilers/assets/icons-18d803d1.svg#icon-sun');
+  const iconMoon = document.querySelector('.icon-theme-moon');
+  const iconSun = document.querySelector('.icon-theme-sun');
+
+  if (theme === 'light') {
+    iconSun.classList.add('is-none');
+    iconMoon.classList.remove('is-none');
+  } else {
+    iconSun.classList.remove('is-none');
+    iconMoon.classList.add('is-none');
+  }
 }
 
 const currentTheme = getSavedTheme();
