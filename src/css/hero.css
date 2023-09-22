@@ -74,6 +74,36 @@
   transition: var(--tran-fast);
 }
 
+.toggle-theme-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--tran-fast);
+}
+
+.icon-theme {
+  width: 20px;
+  height: 20px;
+  fill: var(--logo-color);
+  transition: var(--tran-fast);
+}
+
+.toggle-theme-btn:hover,
+.toggle-theme-btn:focus,
+.toggle-theme-btn:hover use,
+.toggle-theme-btn:focus use {
+  background-color: var(--logo-color);
+  fill: var(--white-color);
+}
+
 /* Media mobile */
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -126,6 +156,16 @@
     right: 32px;
   }
   .icon-arrow {
+    width: 24px;
+    height: 24px;
+  }
+  .toggle-theme-btn {
+    width: 48px;
+    height: 48px;
+    top: 32px;
+    right: 32px;
+  }
+  .icon-theme {
     width: 24px;
     height: 24px;
   }
