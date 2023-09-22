@@ -1,0 +1,11 @@
+.data-dev-modal {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.data-dev-modal.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  pointer-events: none;
+}
