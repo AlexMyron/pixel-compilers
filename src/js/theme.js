@@ -21,7 +21,7 @@ function setTheme(theme) {
     document.documentElement.style.setProperty('--gray-color', '#f3f5f6');
     document.documentElement.style.setProperty(
       '--border-color',
-      'rgba(18, 20, 23, 0.1);'
+      'rgba(18, 20, 23, 0.1)'
     );
     document.documentElement.style.setProperty(
       '--dark-gray-color',
