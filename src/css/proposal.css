@@ -8,7 +8,7 @@
   max-width: 335px;
   margin: auto 20px;
   padding-bottom: 40px;
-  min-width: 280px;
+  /* min-width: 280px; */
 }
 @media screen and (min-width: 375px) {
   .proposal .container {
@@ -206,7 +206,9 @@
 }
 
 .proposal .leave-app {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
   background: var(--logo-color);
 
@@ -217,6 +219,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.71;
+  white-space: nowrap;
   transition: background-color var(--tran-fast);
 }
 @media screen and (min-width: 350px) and (max-width: 767.98px) {
