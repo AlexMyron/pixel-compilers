@@ -235,7 +235,11 @@
     transition: border-color var(--tran-fast);
 }
 
-.application__radio__input:checked~.application__radio__custom::before {
+.application__radio__input:not(:checked):hover ~ .application__radio__custom::before {
+    border: 3px solid var(--logo-color);
+}
+
+.application__radio__input:checked ~ .application__radio__custom::before {
     border-color: var(--logo-color);
 }
 
