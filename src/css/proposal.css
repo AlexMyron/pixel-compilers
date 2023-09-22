@@ -8,7 +8,7 @@
   max-width: 335px;
   margin: auto 20px;
   padding-bottom: 40px;
-  /* min-width: 280px; */
+  overflow: hidden;
 }
 @media screen and (min-width: 375px) {
   .proposal .container {
@@ -257,6 +257,11 @@
   width: calc(100% - 50px);
   top: 36px;
   left: 36px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .proposal .back.card-thumb {
+    left: 45px;
+  }
 }
 
 .proposal .back-dark.card-thumb {
