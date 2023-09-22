@@ -1,26 +1,107 @@
 .application__title {
-    margin-bottom: 14px;
     font-size: 32px;
     font-weight: 600;
     line-height: 1.125em;
     letter-spacing: -0.02em;
     text-align: center;
+    margin-bottom: 14px;
 }
 
-.application__title .title-accent::before {
-    display: none;
+@media (min-width: 768px) {
+    .application__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-bottom: 16px;
+    }
 }
 
-.application__about {
-    display: none;
+@media (max-width: 767px) {
+    .application__title .title-accent::before {
+        display: none;
+    }
 }
 
 .application__info {
-    margin-bottom: 20px;
-    color: rgba(18, 20, 23, 0.80);
     font-size: 14px;
     line-height: 1.174em;
     text-align: center;
+    color: rgba(18, 20, 23, 0.80);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .application__info {
+        font-size: 18px;
+        line-height: 1.667em;
+        color: var(--text-color);
+        max-width: 586px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 64px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .application__info {
+        max-width: 709px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .application__wrap {
+        display: flex;
+        gap: 32px;
+    }
+}
+
+.application__about {
+    max-width: 492px;
+    border-radius: 30px;
+    background-color: var(--logo-color);
+}
+
+@media (max-width: 1279px) {
+    .application__about {
+        display: none;
+    }
+}
+
+.application__about__img {
+    margin-bottom: 20px;
+    border-radius: 30px 30px 0 0;
+}
+
+.application__about__description {
+    padding: 0 20px 40px 20px;
+}
+
+.application__about__title {
+    font-size: 40px;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+    color: var(--white-color);
+    text-align: center;
+
+    margin-bottom: 8px;
+}
+
+.application__about__text {
+    line-height: 1.5em;
+    text-align: center;
+    color: var(--pale-color);
+}
+
+@media (min-width: 768px) {
+    .application__form {
+        padding: 0 102px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .application__form {
+        padding: 0;
+    }
 }
 
 .application__input {
@@ -33,9 +114,23 @@
     margin-bottom: 18px;
 
     border-radius: 12px;
-    border: 1px solid rgba(18, 20, 23, 0.10);
+    border: 2px solid var(--input-border-color);
     background-color: transparent;
     outline: transparent;
+
+    transition: border var(--tran-fast);
+}
+
+.application__input:not(:placeholder-shown):required:invalid {
+    border: 2px solid var(--input-border-color-error);
+}
+
+@media (min-width: 768px) {
+    .application__input {
+        font-size: 16px;
+        line-height: 1.5em;
+        height: 56px;
+    }
 }
 
 .application__input::placeholder {
@@ -49,7 +144,7 @@
 
 .application__comment {
     font-size: 14px;
-    line-height: 1.17;
+    line-height: 1.17em;
     letter-spacing: 0.04em;
     display: block;
     width: 100%;
@@ -59,9 +154,23 @@
     
     background-color: transparent;
     border-radius: 12px;
-    border: 1px solid rgba(18, 20, 23, 0.10);
+    border: 2px solid var(--input-border-color);
     outline: transparent;
     resize: none;
+    transition: border-color var(--tran-fast);
+}
+
+.application__comment::placeholder {
+    color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+    .application__comment {
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-bottom: 32px;
+        height: 104px;
+    }
 }
 
 .application__comment:focus,
@@ -77,6 +186,14 @@
     margin-bottom: 14px;
 }
 
+@media (min-width: 768px) {
+    .application__radio__title {
+        font-size: 20px;
+        line-height: 1.2em;
+        margin-bottom: 16px;
+    }
+}
+
 .application__radio__container {
     display: flex;
     flex-direction: column;
@@ -84,19 +201,26 @@
     margin-bottom: 40px;
 }
 
+@media (min-width: 768px) {
+    .application__radio__container {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+}
+
 .application__radio__box {
     display: flex;
     align-items: center;
 }
 
-.application__radio__input {
+.application__radio__custom {
     position: relative;
     height: 18px;
     width: 18px;
-    margin-right: 9px;
 }
 
-.application__radio__input::before {
+.application__radio__custom::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -106,29 +230,52 @@
     border-radius: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
-    border: 2px solid var(--logo-color);
+    border: 2px solid var(--input-radio-color);
+
+    transition: border-color var(--tran-fast);
 }
 
-.application__radio__input:checked::after {
+.application__radio__input:checked~.application__radio__custom::before {
+    border-color: var(--logo-color);
+}
+
+.application__radio__custom::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     background-color: var(--logo-color);
     transform: translate(-50%, -50%);
-    visibility: visible;
+    opacity: 0;
+
+    transition: opacity var(--tran-fast);
+}
+
+.application__radio__input:checked ~ .application__radio__custom::after {
+    opacity: 1;
 }
 
 .application__radio__label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
     font-size: 14px;
     line-height: 1.714em;
     letter-spacing: -0.02em;
 }
 
-.application__radio__input,
+@media (min-width: 768px) {
+    .application__radio__label {
+        font-size: 18px;
+        line-height: 1.333em;
+        gap: 8px;
+    }
+}
+
+.application__radio__custom,
 .application__radio__label {
     cursor: pointer;
 }
@@ -146,6 +293,21 @@
     border-radius: 12px;
     background-color: var(--logo-color);
     border: transparent;
+
+    transition: background-color var(--tran-fast);
+}
+
+.application__button:focus,
+.application__button:hover {
+    background-color: var(--green-color);
+}
+
+@media (min-width: 768px) {
+    .application__button {
+        font-size: 18px;
+        line-height: 1.556em;
+        height: 60px;
+    }
 }
 
 .application__description {
@@ -154,7 +316,22 @@
     color: var(--text-color);
 }
 
+@media (min-width: 768px) {
+    .application__description {
+        font-size: 14px;
+        line-height: 1.714em;
+    }
+}
+
 .application__description__link {
     text-decoration-line: underline;
     text-decoration-color: inherit;
+
+    transition: color var(--tran-fast);
+}
+
+.application__description__link:focus,
+.application__description__link:hover {
+    text-decoration-line: none;
+    color: var(--accent-color);
 }
