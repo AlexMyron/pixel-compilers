@@ -57,19 +57,22 @@ function getSavedTheme() {
   return savedTheme || 'light';
 }
 
+function setThemeIcon(theme) {
+  const useElement = document.querySelector('.icon-theme use');
+  theme === 'light'
+    ? useElement.setAttribute('href', '/images/icons.svg#icon-moon')
+    : useElement.setAttribute('href', '/images/icons.svg#icon-sun');
+}
+
 const currentTheme = getSavedTheme();
 setTheme(currentTheme);
+setThemeIcon(currentTheme);
 
 const toggleThemeButton = document.querySelector('.toggle-theme-btn');
-const useElement = document.querySelector('.icon-theme use');
 
 toggleThemeButton.addEventListener('click', () => {
   const currentTheme = getSavedTheme();
   const newTheme = currentTheme === 'light' ? 'dark' : 'light';
   setTheme(newTheme);
-
-  const currentHref = useElement.getAttribute('href');
-  currentHref === './images/icons.svg#icon-sun'
-    ? useElement.setAttribute('href', './images/icons.svg#icon-moon')
-    : useElement.setAttribute('href', './images/icons.svg#icon-sun');
+  setThemeIcon(newTheme);
 });
