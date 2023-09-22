@@ -99,7 +99,7 @@
 .contacts {
   font-style: normal;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1279px) {
   .contacts {
     display: none;
   }

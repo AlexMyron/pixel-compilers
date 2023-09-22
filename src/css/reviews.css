@@ -29,8 +29,8 @@
     font-size: 18px;
     line-height: 1.67em;
 
-    margin-bottom: 64px;
-    padding: 0 30px;
+    margin: 0 auto 64px;
+    max-width: 647px;
   }
 }
 

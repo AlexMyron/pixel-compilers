@@ -13,18 +13,18 @@ body {
 }
 
 .section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 @media (min-width: 768px) {
   .section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1280px) {
   .section {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 }
 
