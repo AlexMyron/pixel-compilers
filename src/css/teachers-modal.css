@@ -1,0 +1,200 @@
+/* Modal styles*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    background-color: var(--backdrop-color);
+    transition: opacity var(--tran-fast), visibility var(--tran-fast);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 72px 24px 24px 24px;
+    width: calc(100% - 30px);
+    border-radius: 4px;
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transform: translate(-50%, -50%);
+    transition: transform var(--transition-props);
+}
+
+.modal__button-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: border .3s ease;
+}
+
+.modal__button-close:hover,
+.modal__button-close:focus {
+    border: none;
+}
+
+.modal__close-icon {
+    stroke: var(--primary-color);
+    transition: stroke .3s ease;
+}
+
+.modal__button-close:hover .modal__close-icon,
+.modal__button-close:focus .modal__close-icon {
+    stroke: var(--logo-color);
+}
+
+/* Content */
+
+.teachers-menu-container {
+    border-radius: 16px;
+    background: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .teachers-menu-container {
+        max-width: 516px;
+        /* width: 384px; */
+    }
+}
+
+.teachers-modal-header {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--white-color);
+    background: var(--logo-color);
+    padding: 16px 16px;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.teachers__image__modal {
+    background: var(--logo-color);
+    border-radius: 50px;
+}
+
+.teachers__title__modal {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .teachers__title__modal {
+        font-size: 20px;
+    }
+}
+
+.teachers__greeting__content {
+    color: var(--pale-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .teachers__greeting__content {
+        font-size: 18px;
+    }
+}
+
+.teachers-credentials-title {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .teachers-credentials-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5em;
+        padding: 0 16px;
+    }
+}
+
+.teachers-credentials {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7em;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .teachers-credentials {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+}
+
+.intercom-launcher {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid var(--border-on-green);
+    transition: border var(--tran-icons)
+}
+
+.intercom-launcher:hover,
+.intercom-launcher:focus {
+    animation: socials-icon var(--tran-icons);
+    color: var(--logo-color);
+    border: 1px solid var(--border-active)
+}
+
+.intercom-launcher:active {
+    animation: socials-icon var(--tran-icons)
+}
+
+.intercom-launcher-icon {
+    fill: currentColor;
+    transition: fill var(--tran-icons)
+}
+
+.teachers-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.teachers-raiting {
+    box-shadow: var(--light-shadow);
+}
+
+.checked {
+    color: var(--rating-color);
+}
