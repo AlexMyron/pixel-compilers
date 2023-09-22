@@ -1,3 +1,9 @@
+/* start local variables */
+.about-us-section {
+    --padding-for-memoji-image: 70px;
+}
+/* end local variables */
+
 .about-wrapper {
     display: flex;
     flex-direction: column;
@@ -26,32 +32,41 @@
     background-image: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 173px;
-    will-change: background-image, background-position;
-    animation: changeBg 5s cubic-bezier(0, 1.50, 0, 1) infinite normal;
-}
-
-@keyframes changeBg{
-    0%,100%  {
-        background-image: url('../images/memoji.webp');
-        background-position: center;
-    }
-    50% {
-        background-image: url('../images/memoji2.webp');
-        background-position: center;
-    }
+    background-size: 300px;
+    background-image: url('../images/memoji8.webp');
+    will-change: background-position;
+    animation: changeBg 10s ease-in-out infinite normal;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    @keyframes changeBg{
-        0%,100%  {
-            background-image: url('../images/memoji@2x.webp');
-        }
-        50% {
-            background-image: url('../images/memoji2@2x.webp');
-        }
+    .about-wrapper::after {
+        background-image: url('../images/memoji8@2x.webp');
+    }
+}
+
+@keyframes changeBg{
+    0%,20%  {
+        background-position: center var(--padding-for-memoji-image);
+    }
+    30%,70% {
+        background-position: center bottom var(--padding-for-memoji-image);
+    }
+    80%,100%  {
+        background-position: center var(--padding-for-memoji-image);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about-wrapper::after {
+        --padding-for-memoji-image: 35px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .about-wrapper::after {
+        --padding-for-memoji-image: 90px;
     }
 }
 

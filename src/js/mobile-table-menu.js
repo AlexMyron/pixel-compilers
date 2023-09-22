@@ -5,6 +5,7 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const backdrop = document.querySelector('.js-menu-backdrop');
+  const mobMenuLinks = document.querySelectorAll('.js-menu-link');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -21,7 +22,7 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
     if (!isMacOS) {
       if (!isMenuOpen) {
         document.body.style.width = '100wv';
-        document.body.style.borderRight = '22px solid transparent';
+        document.body.style.borderRight = '17px solid transparent';
       } else {
         document.body.style.width = 'auto';
         document.body.style.borderRight = 'none';
@@ -31,6 +32,9 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  mobMenuLinks.forEach(link => {
+    link.addEventListener('click', toggleMenu);
+  })
   backdrop.addEventListener('click', ({ target, currentTarget }) => {
     currentTarget === target && toggleMenu();
   });

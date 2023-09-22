@@ -29,14 +29,8 @@
     font-size: 18px;
     line-height: 1.67em;
 
-    margin-bottom: 64px;
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .reviews__info {
-    padding: 0 200px;
+    margin: 0 auto 64px;
+    max-width: 647px;
   }
 }
 
@@ -60,6 +54,7 @@
 @media (max-width: 374px) {
   .reviews__element {
     max-width: 280px;
+    height: 310px;
     margin-left: auto;
     margin-right: auto;
   }

@@ -1,19 +1,30 @@
 .footer {
   background-color: var(--primary-color);
   color: var(--white-color);
+  padding: 40px 0 20px;
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 32px 0 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding: 64px 0 24px;
+  }
 }
 
 .footer-container {
-  padding: 40px 20px 20px;
+  padding: 0 20px;
 }
 @media only screen and (min-width: 768px) {
   .footer-container {
-    padding: 32px 30px 16px;
+    padding: 0 30px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .footer-container {
-    padding: 64px 64px 24px;
+    padding: 0 64px;
   }
 }
 
@@ -63,8 +74,7 @@
 
 .footer-contacts-text {
   margin-bottom: 4px;
-
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--pale-color);
 }
 
 .footer-contacts-link {
@@ -216,5 +226,10 @@
 }
 .copyright-btn:hover,
 .copyright-btn:focus {
+  transition: color var(--tran-fast);
+}
+
+.copyright-link:hover,
+.copyright-link:focus {
   color: var(--logo-color);
 }
