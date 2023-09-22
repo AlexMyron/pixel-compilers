@@ -6,8 +6,15 @@
   border-radius: 16px;
   background: linear-gradient(85deg, #4dc262 2.25%, #bee8cc 131.25%);
   max-width: 335px;
-  margin: 0px auto;
+  margin: auto 20px;
   padding-bottom: 40px;
+  /* min-width: 280px; */
+}
+@media screen and (min-width: 375px) {
+  .proposal .container {
+    margin: 0px auto;
+    overflow: visible;
+  }
 }
 @media screen and (min-width: 768px) {
   .proposal .container {
@@ -200,20 +207,24 @@
 }
 
 .proposal .leave-app {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
   background: var(--logo-color);
 
-  padding: 14px 58px;
+  padding: 14px 20px;
+  text-align: center;
 
   color: var(--white-color);
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.71;
+  white-space: nowrap;
   transition: background-color var(--tran-fast);
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 350px) and (max-width: 767.98px) {
   .proposal .leave-app {
     min-width: 255px;
   }
@@ -246,17 +257,15 @@
   width: calc(100% - 50px);
   top: 36px;
   left: 36px;
+}
+
+.proposal .back-dark.card-thumb {
   z-index: 1;
   background-color: var(--light-green-color);
   transform: rotate(-9deg);
 }
 
-.proposal .back-back.card-thumb {
-  position: absolute;
-  height: calc(100% - 72px);
-  width: calc(100% - 50px);
-  top: 36px;
-  left: 36px;
+.proposal .back-light.card-thumb {
   z-index: 0;
   background: var(--light-gray-color);
   transform: rotate(11deg);
