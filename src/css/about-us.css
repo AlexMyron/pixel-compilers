@@ -26,34 +26,61 @@
     background-image: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 173px;
-    will-change: background-image, background-position;
-    animation: changeBg 5s cubic-bezier(0, 1.50, 0, 1) infinite normal;
-}
-
-@keyframes changeBg{
-    0%,100%  {
-        background-image: url('../images/memoji.webp');
-        background-position: center;
-    }
-    50% {
-        background-image: url('../images/memoji2.webp');
-        background-position: center;
-    }
+    background-size: 300px;
+    background-image: url('../images/memoji8.webp');
+    will-change: background-position;
+    animation: changeBg 12s ease-in-out infinite normal;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
+    .about-wrapper::after {
+        background-image: url('../images/memoji8@2x.webp');
+    }
+}
+
+@media only screen and (max-width: 767px) {
     @keyframes changeBg{
-        0%,100%  {
-            background-image: url('../images/memoji@2x.webp');
+        0%,20%  {
+            background-position: center 70px;
         }
-        50% {
-            background-image: url('../images/memoji2@2x.webp');
+        30%,70% {
+            background-position: center bottom 70px;
+        }
+        80%,100%  {
+            background-position: center 70px;
         }
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    @keyframes changeBg{
+        0%,20%  {
+            background-position: center 35px;
+        }
+        30%,70% {
+            background-position: center bottom 35px;
+        }
+        80%,100%  {
+            background-position: center 35px;
+        }
+    }
+}
+@media only screen and (min-width: 1280px) {
+    @keyframes changeBg{
+        0%,20%  {
+            background-position: center 90px;
+        }
+        30%,70% {
+            background-position: center bottom 90px;
+        }
+        80%,100%  {
+            background-position: center 90px;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 767px) {
     .about-wrapper::after {
