@@ -6,8 +6,14 @@
   border-radius: 16px;
   background: linear-gradient(85deg, #4dc262 2.25%, #bee8cc 131.25%);
   max-width: 335px;
-  margin: 0px auto;
+  margin: auto 20px;
   padding-bottom: 40px;
+  min-width: 280px;
+}
+@media screen and (min-width: 375px) {
+  .proposal .container {
+    margin: 0px auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .proposal .container {
@@ -213,7 +219,7 @@
   line-height: 1.71;
   transition: background-color var(--tran-fast);
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 350px) and (max-width: 767.98px) {
   .proposal .leave-app {
     min-width: 255px;
   }
