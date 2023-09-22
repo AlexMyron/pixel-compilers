@@ -21,7 +21,7 @@ function setTheme(theme) {
     document.documentElement.style.setProperty('--gray-color', '#f3f5f6');
     document.documentElement.style.setProperty(
       '--border-color',
-      'rgba(18, 20, 23, 0.1);'
+      'rgba(18, 20, 23, 0.1)'
     );
     document.documentElement.style.setProperty(
       '--dark-gray-color',
@@ -58,10 +58,16 @@ function getSavedTheme() {
 }
 
 function setThemeIcon(theme) {
-  const useElement = document.querySelector('.icon-theme use');
-  theme === 'light'
-    ? useElement.setAttribute('href', '/images/icons.svg#icon-moon')
-    : useElement.setAttribute('href', '/images/icons.svg#icon-sun');
+  const iconMoon = document.querySelector('.icon-theme-moon');
+  const iconSun = document.querySelector('.icon-theme-sun');
+
+  if (theme === 'light') {
+    iconSun.classList.add('is-none');
+    iconMoon.classList.remove('is-none');
+  } else {
+    iconSun.classList.remove('is-none');
+    iconMoon.classList.add('is-none');
+  }
 }
 
 const currentTheme = getSavedTheme();
