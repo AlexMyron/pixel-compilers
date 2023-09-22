@@ -44,13 +44,10 @@
   display: flex;
 }
 
-@media (min-width: 768px) {
-  .reviews__list {
-    gap: 32px;
-  }
-}
-
 .reviews__element {
+  width: 335px;
+  height: 278px;
+
   border-radius: 16px;
   background: var(--gray-color);
 
@@ -60,12 +57,27 @@
   padding: 20px;
 }
 
+@media (max-width: 374px) {
+  .reviews__element {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 768px) {
   .reviews__element {
     width: 336px;
+    height: 326px;
     border-radius: 30px;
 
     padding: 32px 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews__element {
+    width: 320px;
   }
 }
 
@@ -113,6 +125,7 @@
 .reviews__text_cont {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 
 .reviews__student_name {
@@ -142,5 +155,48 @@
   .reviews__text {
     padding: 32px 16px 8px;
     font-size: 16px;
+    line-height: 1.5em;
   }
+}
+
+/* SLIDER CSS */
+
+#reviews .swiper-pagination {
+  margin-top: 10px;
+}
+
+#reviews .swiper-slide {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1280px) {
+  .swiper-slide {
+    width: 320px !important;
+  }
+}
+
+#reviews .reviews {
+  position: relative;
+}
+
+#reviews .swiper-pagination-container {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#reviews .swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  background-color: transparent !important;
+  border: 1px solid var(--green-color) !important;
+  opacity: 0.7 !important;
+}
+
+#reviews .swiper-pagination-bullet-active {
+  background-color: var(--green-color) !important;
+  opacity: 1 !important;
 }
