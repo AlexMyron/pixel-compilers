@@ -21,7 +21,7 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
     if (!isMacOS) {
       if (!isMenuOpen) {
         document.body.style.width = '100wv';
-        document.body.style.borderRight = '22px solid transparent';
+        document.body.style.borderRight = '17px solid transparent';
       } else {
         document.body.style.width = 'auto';
         document.body.style.borderRight = 'none';
