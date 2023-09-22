@@ -60,8 +60,8 @@ function getSavedTheme() {
 function setThemeIcon(theme) {
   const useElement = document.querySelector('.icon-theme use');
   theme === 'light'
-    ? useElement.setAttribute('href', '/images/icons.svg#icon-moon')
-    : useElement.setAttribute('href', '/images/icons.svg#icon-sun');
+    ? useElement.setAttribute('href', '/pixel-compilers/assets/icons-18d803d1.svg#icon-moon')
+    : useElement.setAttribute('href', '/pixel-compilers/assets/icons-18d803d1.svg#icon-sun');
 }
 
 const currentTheme = getSavedTheme();
