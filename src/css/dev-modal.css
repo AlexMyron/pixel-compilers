@@ -1,11 +1,55 @@
-.data-dev-modal {
-  display: block;
-  width: 200px;
-  height: 200px;
+.dev-modal {
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
 }
-.data-dev-modal.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  display: none;
-  pointer-events: none;
+
+.dev-modal-btn {
+  color: var(--primary-color);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  transition: color var(--tran-fast);
+}
+.dev-modal-btn:hover,
+.dev-modal-btn:focus {
+  color: var(--logo-color);
+}
+
+.dev-modal-icon {
+  stroke: currentColor;
+}
+
+.dev-modal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dev-modal-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: ;
+}
+
+.dev-modal-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+}
+
+.dev-img-wrapper {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.dev-modal-img {
+  object-fit: cover;
 }
