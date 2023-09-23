@@ -31,6 +31,10 @@
   }
 }
 
+.dev-modal.hidden {
+  display: none;
+}
+
 body.dev-modal-is-open {
   overflow: hidden;
 }
