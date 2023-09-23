@@ -1,3 +1,4 @@
+import { enableBodyScroll } from 'body-scroll-lock';
 import manageScroll from './manage-body-scroll';
 
 (() => {
