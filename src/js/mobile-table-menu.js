@@ -1,4 +1,4 @@
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import manageScroll from './manage-body-scroll';
 
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
@@ -14,27 +14,14 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
     mobileMenu.classList.toggle('is-open');
     backdrop.classList.toggle('is-hidden');
 
-    isMenuOpen
-      ? enableBodyScroll(document.body)
-      : disableBodyScroll(document.body);
-
-    const isMacOS = /Mac|iPod|iPhone|iPad/.test(navigator.userAgent);
-    if (!isMacOS) {
-      if (!isMenuOpen) {
-        document.body.style.width = '100wv';
-        document.body.style.borderRight = '17px solid transparent';
-      } else {
-        document.body.style.width = 'auto';
-        document.body.style.borderRight = 'none';
-      }
-    }
+    manageScroll(isMenuOpen);
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
   mobMenuLinks.forEach(link => {
     link.addEventListener('click', toggleMenu);
-  })
+  });
   backdrop.addEventListener('click', ({ target, currentTarget }) => {
     currentTarget === target && toggleMenu();
   });
