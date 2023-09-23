@@ -10,7 +10,7 @@ const teachersHub = [
     description:
       'I will provide you with detailed feedback and additional learning tips for your language training. Post any questions you have in the chat. I or one of my colleagues will get back to you straight away.',
     about:
-      'Soy de Barcelona, España. Actualmente estoy viviendo en Alemania pero también estuve dos años en Italia. Me gusta mucho vivir en otros países para poder conocer mejor el país. Desde que terminé la universidad he estado trabajando de profesora de español y de catalán para extranjeros.',
+      'Soy de Barcelona, España. Me gusta mucho vivir en otros países para poder conocer mejor el país. Desde que terminé la universidad he estado trabajando de profesora de español y de catalán para extranjeros.',
   },
   {
     id: 2,
