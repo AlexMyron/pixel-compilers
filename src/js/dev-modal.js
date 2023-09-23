@@ -1,3 +1,5 @@
+import manageScroll from './manage-body-scroll';
+
 (() => {
   const refs = {
     openDevModalBtn: document.querySelector('[data-dev-modal-open]'),
@@ -10,7 +12,11 @@
   refs.closeDevModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.devModal.classList.toggle('is-hidden');
-    refs.body.classList.toggle('dev-modal-is-open');
+    const { devModal, body } = refs,
+      isOpened = !devModal.classList.contains('is-hidden');
+
+    devModal.classList.toggle('is-hidden');
+    body.classList.toggle('dev-modal-is-open');
+    manageScroll(isOpened);
   }
 })();
