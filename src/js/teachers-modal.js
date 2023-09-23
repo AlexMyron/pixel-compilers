@@ -101,9 +101,12 @@ const teachersHub = [
 
   refs.closeModalBtn.addEventListener('click', () => {
     toggleModal();
-    refs.imagesRef.forEach(imageEl => {
-      imageEl.classList.add('visually-hidden');
-    });
+    
+    setTimeout(() => {
+      refs.imagesRef.forEach(imageEl => {
+        imageEl.classList.add('visually-hidden');
+      }, 300);
+    })
   });
 
   populateData();
