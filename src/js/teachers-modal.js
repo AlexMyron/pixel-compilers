@@ -6,40 +6,44 @@ const teachersHub = [
     name: 'Maria',
     rating: 2,
     greeting: "Hello, I'm Maria",
+    position: "Your teacher in English for Beginners",
     description:
       'I will provide you with detailed feedback and additional learning tips for your language training. Post any questions you have in the chat. I or one of my colleagues will get back to you straight away.',
     about:
-      'Soy de Barcelona, España. Actualmente estoy viviendo en Alemania pero también estuve dos años en Italia. Me gusta mucho vivir en otros países para poder conocer mejor el país. Desde que terminé la universidad he estado trabajando de profesora de español y de catalán para extranjeros.',
+      'Soy de Barcelona, España. Me gusta mucho vivir en otros países para poder conocer mejor el país. Desde que terminé la universidad he estado trabajando de profesora de español y de catalán para extranjeros.',
   },
   {
     id: 2,
     name: 'Artem',
     rating: 3,
     greeting: "What's up, I'm Artem",
+    position: "Your trainer in American English",
     description:
-      'Artem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam totam recusandae enim quam veniam similique laborum magni vero placeat, dicta sapiente ad at est adipisci reprehenderit rerum, eaque in excepturi.',
+      'With my innovative teaching techniques and a focus on interactive learning, I am excel in keeping you engaged and motivated',
     about:
-      'Artem Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem debitis odit, atque similique quia hic, eos voluptatem veritatis illum in. Officiis neque, explicabo exercitationem consectetur quos voluptate esse odio doloremque aut amet temporibus, non sint voluptatum necessitatibus. Quaerat, ullam.',
+      'Artem, lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem debitis odit, atque similique quia hic, eos voluptatem veritatis illum in. Explicabo exercitationem consectetur quos voluptate esse odio doloremque aut amet temporibus, non sint voluptatum necessitatibus',
   },
   {
     id: 3,
     name: 'Ilona',
     rating: 4,
-    greeting: "So, guys, I'm Ilona",
+    greeting: "Hello, I'm Ilona",
+    position: "Your tutor in English Advanced",
     description:
-      'Ilona Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam totam recusandae enim quam veniam similique laborum magni vero placeat, dicta sapiente ad at est adipisci reprehenderit rerum, eaque in excepturi.',
+      'Specialising in advanced English, I provide intensive instruction, ensuring that you gain confidence in complex language tasks',
     about:
-      'Ilona Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem debitis odit, atque similique quia hic,  voluptatem veritatis illum in. Officiis neque, explicabo exercitationem consectetur quos voluptate esse odio doloremque aut amet temporibus, non sint voluptatum necessitatibus. Quaerat, ullam.',
+      'Ilona, lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem debitis odit, atque similique quia hic,  voluptatem veritatis illum in. Officiis neque, explicabo exercitationem consectetur quos voluptate esse odio doloremque aut amet temporibus, non sint voluptatum necessitatibus',
   },
   {
     id: 4,
     name: 'Volodymyr',
     rating: 5,
     greeting: "Hi, I'm Volodymyr",
+    position: "Your teacher in English for Business",
     description:
-      'Volodymyr Ilona Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam totam recusandae enim quam veniam similique laborum magni vero placeat, dicta sapiente ad at est adipisci reprehenderit rerum, eaque in excepturi.',
+      'Expert in English for specific purposes, tailoring my approach to meet your individual career and industry-specific language needs',
     about:
-      'Volodymyr Ilona Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem debitis odit, atque similique quia hic,  voluptatem veritatis illum in. Officiis neque, explicabo exercitationem consectetur quos voluptate esse odio doloremque aut amet temporibus, non sint voluptatum necessitatibus. Quaerat, ullam.',
+      'Volodymyr, lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem debitis odit, atque similique quia hic. Officiis neque, explicabo exercitationem consectetur quos voluptate esse odio doloremque aut amet temporibus, non sint voluptatum necessitatibus',
   },
 ];
 
@@ -55,6 +59,7 @@ const teachersHub = [
     imageEl: document.querySelector('.js-teachers-image'),
     descriptionEl: document.querySelector('.js-teachers-description'),
     ratingEl: document.querySelector('.js-teachers-rating'),
+    positionEl: document.querySelector('.js-teachers-position'),
   };
 
   const toggleModal = () => {
@@ -66,7 +71,7 @@ const teachersHub = [
   };
 
   const populateData = () => {
-    const { teachersRef, greetingEl, descriptionEl, aboutEl, imagesRef } = refs;
+    const { teachersRef, greetingEl, descriptionEl, aboutEl, imagesRef, positionEl } = refs;
 
     teachersRef.forEach(teacher => {
       teacher.addEventListener('click', ({ currentTarget }) => {
@@ -77,6 +82,7 @@ const teachersHub = [
             greetingEl.textContent = teacherData.greeting;
             descriptionEl.textContent = teacherData.description;
             aboutEl.textContent = teacherData.about;
+            positionEl.textContent = teacherData.position;
           }
         });
 
