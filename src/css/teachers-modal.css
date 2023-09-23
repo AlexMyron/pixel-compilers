@@ -20,19 +20,21 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 72px 24px 24px 24px;
+    overflow-Y: auto;
+    max-height: 90%;
+    padding: 62px 24px 24px;
     width: calc(100% - 30px);
     border-radius: 4px;
     background-color: var(--white-color);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 2px 1px 0px var(--modal-shadow);
     transform: translate(-50%, -50%);
     transition: transform var(--transition-props);
 }
 
 .modal__button-close {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 16px;
+    right: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +64,6 @@
 }
 
 /* Content */
-
 .teachers-menu-container {
     border-radius: 16px;
     background: var(--gray-color);
@@ -72,9 +73,14 @@
 }
 
 @media (min-width: 768px) {
-    .teachers-menu-container {
-        max-width: 516px;
-        /* width: 384px; */
+    .modal {
+    max-width: 75%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .modal {
+    max-width: 50%;
     }
 }
 
@@ -135,7 +141,6 @@
 @media (min-width: 768px) {
     .teachers-credentials-title {
         font-size: 18px;
-        font-weight: 500;
         line-height: 1.5em;
         padding: 0 16px;
     }

@@ -20,6 +20,7 @@
   --input-radio-color: rgba(18, 20, 23, 0.2);
   --light-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0,
     rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  --modal-shadow: rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
   --primary-font-family: 'Manrope', Helvetica, Arial, sans-serif;
 
