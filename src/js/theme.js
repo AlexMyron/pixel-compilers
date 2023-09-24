@@ -10,6 +10,7 @@ function setTheme(theme) {
     document.documentElement.style.setProperty('--border-color', '#0d6385');
     document.documentElement.style.setProperty('--border-on-green', '#4c4c4c');
     document.documentElement.style.setProperty('--border-active', 'green');
+    document.documentElement.style.setProperty('--hint-color', 'rgba(255, 255, 255, 0.7)');
     document.documentElement.style.setProperty(
       '--input-border-color',
       '#545454'

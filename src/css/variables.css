@@ -1,6 +1,7 @@
 :root {
   --primary-color: #121417;
   --text-color: rgba(18, 20, 23, 0.5);
+  --hint-color: rgba(18, 20, 23, 0.6);
   --logo-color: #4dc274;
   --green-color: #38ae5f;
   --light-green-color: #d4fde1;
