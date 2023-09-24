@@ -17,7 +17,7 @@
   --border-on-green: rgba(255, 255, 255, 0.1);
   --backdrop-color: rgba(46, 47, 66, 0.4);
   --input-border-color: rgba(18, 20, 23, 0.10);
-  --input-border-color-error: rgba(219, 48, 55, 0.3);
+  --input-border-color-error: #db3036;
   --input-radio-color: rgba(18, 20, 23, 0.2);
   --light-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0,
     rgba(0, 0, 0, 0.1) 0 3px 4px 0;
