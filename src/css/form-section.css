@@ -92,7 +92,7 @@
     color: var(--pale-color);
 }
 
-.application__form {
+.application__form-wrapper {
     position: relative;
 }
 
@@ -149,11 +149,11 @@
 .application__form__error-message.name {
     position: absolute;
     bottom: 567px;
-    left: 0;
+    left: 20px;
     width: 100%;
 
     font-size: 9px;
-    text-align: center;
+    text-align: left;
     color: var(--input-border-color-error);
 
     opacity: 0;
@@ -180,11 +180,11 @@
 .application__form__error-message.email {
     position: absolute;
     bottom: 500px;
-    left: 0;
+    left: 20px;
     width: 100%;
 
     font-size: 9px;
-    text-align: center;
+    text-align: left;
     color: var(--input-border-color-error);
 
     opacity: 0;
@@ -211,11 +211,11 @@
 .application__form__error-message.phone {
     position: absolute;
     bottom: 433px;
-    left: 0;
+    left: 20px;
     width: 100%;
 
     font-size: 9px;
-    text-align: center;
+    text-align: left;
     color: var(--input-border-color-error);
 
     opacity: 0;
