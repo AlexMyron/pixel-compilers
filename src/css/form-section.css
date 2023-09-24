@@ -92,6 +92,10 @@
     color: var(--pale-color);
 }
 
+.application__form {
+    position: relative;
+}
+
 @media (min-width: 768px) {
     .application__form {
         padding: 0 102px;
@@ -140,6 +144,99 @@
 .application__input:focus,
 .application__input:hover {
     border-color: var(--logo-color);
+}
+
+.application__form__error-message.name {
+    position: absolute;
+    bottom: 567px;
+    left: 0;
+    width: 100%;
+
+    font-size: 9px;
+    text-align: center;
+    color: var(--input-border-color-error);
+
+    opacity: 0;
+    transition: opacity var(--tran-icons);
+}
+
+@media (min-width: 768px) {
+    .application__form__error-message.name {
+        bottom: 505px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .application__form__error-message.name {
+        bottom: 510px;
+    }
+}
+
+.application__input.name:not(:placeholder-shown):required:invalid ~ .application__form__error-message.name {
+    opacity: 1;
+}
+
+.application__form__error-message.email {
+    position: absolute;
+    bottom: 500px;
+    left: 0;
+    width: 100%;
+
+    font-size: 9px;
+    text-align: center;
+    color: var(--input-border-color-error);
+
+    opacity: 0;
+    transition: opacity var(--tran-icons);
+}
+
+@media (min-width: 768px) {
+    .application__form__error-message.email {
+        bottom: 432px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .application__form__error-message.email {
+        bottom: 435px;
+    }
+}
+
+.application__input.email:not(:placeholder-shown):required:invalid ~ .application__form__error-message.email {
+    opacity: 1;
+}
+
+.application__form__error-message.phone {
+    position: absolute;
+    bottom: 433px;
+    left: 0;
+    width: 100%;
+
+    font-size: 9px;
+    text-align: center;
+    color: var(--input-border-color-error);
+
+    opacity: 0;
+    transition: opacity var(--tran-icons);
+}
+
+@media (min-width: 768px) {
+    .application__form__error-message.phone {
+        bottom: 358px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .application__form__error-message.phone {
+        bottom: 360px;
+    }
+}
+
+.application__input.phone:not(:placeholder-shown):required:invalid ~ .application__form__error-message.phone {
+    opacity: 1;
 }
 
 .application__comment {
