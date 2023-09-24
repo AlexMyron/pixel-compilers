@@ -10,7 +10,7 @@ body {
   color: var(--primary-color);
   background-color: var(--white-color);
   cursor: default;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .section {
@@ -137,4 +137,9 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.no-scroll {
+  border-right: 17px solid transparent;
+  width: 100vw;
 }

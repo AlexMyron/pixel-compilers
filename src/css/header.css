@@ -182,6 +182,9 @@
   visibility: hidden;
   pointer-events: none;
 }
+.is-none {
+  display: none;
+}
 
 .menu-toggle {
   min-height: 40px;

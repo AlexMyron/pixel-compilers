@@ -1,6 +1,7 @@
 :root {
   --primary-color: #121417;
   --text-color: rgba(18, 20, 23, 0.5);
+  --hint-color: rgba(18, 20, 23, 0.6);
   --logo-color: #4dc274;
   --green-color: #38ae5f;
   --light-green-color: #d4fde1;
@@ -10,6 +11,7 @@
   --light-gray-color: rgba(255, 255, 255, 0.5);
   --pale-color: rgba(255, 255, 255, 0.7);
   --white-color: #fff;
+  --rating-color: #ff8c00;
   --border-color: rgba(18, 20, 23, 0.1);
   --border-active: rgba(77, 194, 116, 0.1);
   --border-on-green: rgba(255, 255, 255, 0.1);
@@ -17,6 +19,9 @@
   --input-border-color: rgba(18, 20, 23, 0.10);
   --input-border-color-error: rgba(219, 48, 55, 0.3);
   --input-radio-color: rgba(18, 20, 23, 0.2);
+  --light-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0,
+    rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  --modal-shadow: rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
   --primary-font-family: 'Manrope', Helvetica, Arial, sans-serif;
 

@@ -1,0 +1,108 @@
+<div class="backdrop is-hidden js-teachers-modal">
+  <div class="modal">
+    <button
+      type="button"
+      class="modal__button-close js-teachers-close"
+      aria-controls="teachers card modal"
+    >
+      <svg class="modal__close-icon" width="32" height="32">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="teachers-menu-container">
+      <div class="teachers-modal-header">
+        <picture class="js-teacher-image visually-hidden" data-id="1">
+          <source 
+            srcset="./images/teachers/teacher1-2.webp 1x, ./images/teachers/teacher1@2x-2.webp 2x" 
+            type="image/webp" 
+          />
+          <img
+            srcset="./images/teachers/teacher1-2.jpg 1x, ./images/teachers/teacher1@2x-2.jpg 2x"
+            src="./images/teachers/teacher1-2.jpg"
+            class="teachers__image__modal"
+            alt="Maria"
+            width="100"
+            height="100"
+            loading="lazy"
+          />
+        </picture>
+        <picture class="js-teacher-image visually-hidden" data-id="2">
+          <source 
+            srcset="./images/teachers/teacher2-2.webp 1x, ./images/teachers/teacher2@2x-2.webp 2x" 
+            type="image/webp" 
+          />
+          <img
+            srcset="./images/teachers/teacher2-2.jpg 1x, ./images/teachers/teacher2@2x-2.jpg 2x"
+            src="./images/teachers/teacher2-2.jpg"
+            class="teachers__image__modal"
+            alt="Artem"
+            width="100"
+            height="100"
+            loading="lazy"
+          />
+        </picture>
+        <picture class="js-teacher-image visually-hidden" data-id="3">
+          <source 
+            srcset="./images/teachers/teacher3-2.webp 1x, ./images/teachers/teacher3@2x-2.webp 2x" 
+            type="image/webp" 
+          />
+          <img
+            srcset="./images/teachers/teacher3-2.jpg 1x, ./images/teachers/teacher3@2x-2.jpg 2x"
+            src="./images/teachers/teacher3-2.jpg"
+            class="teachers__image__modal"
+            alt="Ilona"
+            width="100"
+            height="100"
+            loading="lazy"
+          />
+        </picture>
+        <picture class="js-teacher-image visually-hidden" data-id="4">
+          <source 
+            srcset="./images/teachers/teacher4-2.webp 1x, ./images/teachers/teacher4@2x-2.webp 2x" 
+            type="image/webp" 
+          />
+          <img
+            srcset="./images/teachers/teacher4-2.jpg 1x, ./images/teachers/teacher4@2x-2.jpg 2x"
+            src="./images/teachers/teacher4-2.jpg"
+            class="teachers__image__modal"
+            alt="Volodymyr"
+            width="100"
+            height="100"
+            loading="lazy"
+          />
+        </picture>
+        <div class="teachers__greeting__container">
+          <p class="teachers__title__modal js-teachers-greeting"></p>
+          <p class="teachers__greeting__content js-teachers-position"></p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p class="teachers-credentials js-teachers-description"></p>
+        <p class="teachers-credentials-title">About me</p>
+        <p class="teachers-credentials js-teachers-about"></p>
+
+        <div class="teachers-modal-footer">
+          <div class="teachers-raiting">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <a
+            class="intercom-launcher"
+            href="https://www.edu.goit.global/uk/upsell"
+            rel="noopener noreferrer"
+            aria-label="Place a call"
+            target="_blank"
+          >
+            <svg class="intercom-launcher-icon" width="28" height="28">
+              <use href="./images/icons.svg#icon-bubbles"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

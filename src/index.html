@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta
-    name="description"
-    content="Welcome to English Excellence, where the joy of learning English comes to life! Whether you're just starting your English journey or looking to enhance your language skills, we have the perfect program for you."
+      name="description"
+      content="Welcome to English Excellence, where the joy of learning English comes to life! Whether you're just starting your English journey or looking to enhance your language skills, we have the perfect program for you."
     />
     <link rel="icon" type="image/svg+xml" href="./images/fav-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,14 +13,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -36,8 +51,13 @@
     </main>
     <load src="partials/footer.html" />
     <load src="partials/scroll-to-top.html" />
+    <load src="partials/dev-modal.html" />
+    <load src="partials/teachers-modal.html" />
 
     <script type="module" src="/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
   </body>
 </html>
