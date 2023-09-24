@@ -20,6 +20,7 @@ function setTheme(theme) {
     document.documentElement.style.setProperty('--primary-color', '#121417');
     document.documentElement.style.setProperty('--white-color', '#fff');
     document.documentElement.style.setProperty('--gray-color', '#f3f5f6');
+    document.documentElement.style.setProperty('--hint-color', 'rgba(18, 20, 23, 0.6)');
     document.documentElement.style.setProperty(
       '--border-color',
       'rgba(18, 20, 23, 0.1)'
