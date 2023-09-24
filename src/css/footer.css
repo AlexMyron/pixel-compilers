@@ -225,10 +225,7 @@
   transition: color var(--tran-fast);
 }
 .copyright-btn:hover,
-.copyright-btn:focus {
-  transition: color var(--tran-fast);
-}
-
+.copyright-btn:focus,
 .copyright-link:hover,
 .copyright-link:focus {
   color: var(--logo-color);
