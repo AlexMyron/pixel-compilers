@@ -1,3 +1,109 @@
+
+Команда Розробки
+<table>
+<tr>
+<th align="center" width="440px">
+<p> 
+<small>
+  <ul>
+      <li>
+        <p>Олексій Мироненко</p>
+        <img
+          width="80"
+          class="dev-modal-img"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Oleksiy_Myronenko.webp"
+          alt="Oleksiy Myronenko"
+        />
+      </li>
+      <li>
+        <p>Наталія Ходорова</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Nataliia_Khodorova.webp"
+          alt="Nataliia Khodorova"
+        />
+      </li>
+      <li>
+        <p>Максим Зиза</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Maksym_Zyza.webp"
+          alt="Maksym Zyza"
+        />
+      </li>
+      <li>
+        <p>Максим Лесковець</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Maksym_Leskovets.webp"
+          alt="Maksym Leskovets"
+        />
+      </li>
+      <li>
+        <p>Максим Норіцин</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Maksym_Noritsyn.webp"
+          alt="Maksym Noritsyn"
+        />
+      </li>
+    </ul>
+</small>
+</p>
+</th>
+<th align="center" width="440px">
+<p> 
+<small>
+  <ul>
+      <li>
+        <p>Дмитро Яговкін</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Dmytro_Yagovkin.webp"
+          alt="Dmytro Yahovkin"
+        />
+      </li>
+      <li>
+        <p>Дмитро Жук</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/dmytro_zhuk.webp"
+          alt="Dmytro Zhuk"
+        />
+      </li>
+      <li>
+        <p>Олена Горобець</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Olena_Horobets.webp"
+          alt="Olena Horobets"
+        />
+      </li>
+      <li>
+        <p>Лариса Інджі</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Larysa_Indzhi.webp"
+          alt="Larysa Indzhi"
+        />
+      </li>
+      <li>
+        <p>Денис Лєнський</p>
+        <img
+          width="80"
+          src="https://github.com/AlexMyron/pixel-compilers/blob/main/src/images/dev-team/Denys_Lienskyi.webp"
+          alt="Denys Lienskyi"
+        />
+      </li>
+    </ul>
+</small>
+</p>
+</th>
+</tr>
+</table>
+
+
+
 # Vanilla App Template
 
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування
