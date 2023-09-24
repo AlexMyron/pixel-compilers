@@ -146,11 +146,17 @@
     border-color: var(--logo-color);
 }
 
+.application__form__error-message {
+    width: calc(100% - 20px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .application__form__error-message.name {
     position: absolute;
     bottom: 567px;
     left: 20px;
-    width: 100%;
 
     font-size: 9px;
     text-align: left;
@@ -181,7 +187,6 @@
     position: absolute;
     bottom: 500px;
     left: 20px;
-    width: 100%;
 
     font-size: 9px;
     text-align: left;
@@ -212,7 +217,6 @@
     position: absolute;
     bottom: 433px;
     left: 20px;
-    width: 100%;
 
     font-size: 9px;
     text-align: left;
