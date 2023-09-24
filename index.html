@@ -36,8 +36,8 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     
-    <script type="module" crossorigin src="/pixel-compilers/assets/index-00387ec4.js"></script>
-    <link rel="stylesheet" href="/pixel-compilers/assets/index-ab94e35d.css">
+    <script type="module" crossorigin src="/pixel-compilers/assets/index-b8ef43a8.js"></script>
+    <link rel="stylesheet" href="/pixel-compilers/assets/index-b5840cb2.css">
   </head>
   <body>
     <!-- Header -->
@@ -522,30 +522,34 @@
         </div>
       </div>
       <form class="application__form" name="application-form">
+        <div class="application__form-wrapper">
         <input
-          class="application__input"
+          class="application__input name"
           type="text"
           name="user-name"
           placeholder="Name"
           pattern="[A-Za-z]{2,10}"
           required
         >
+        <span class="application__form__error-message name">Username must contain at least 2, but not more 15 characters</span>
         <input
-          class="application__input"
+          class="application__input email"
           type="email"
           name="user-email"
           placeholder="Email"
           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
           required
         >
+        <span class="application__form__error-message email">Email-example: jsmith@example.com</span>
         <input
-          class="application__input"
+          class="application__input phone"
           type="tel"
           name="user-phone"
           placeholder="Phone"
           pattern="[0-9]{8,15}"
           required
         >
+        <span class="application__form__error-message phone">Phone number must contain at least 8, but not more 15 digits</span>
         <textarea
           class="application__comment"
           name="user-comment"
@@ -611,6 +615,7 @@
             >Privacy Policy</a
           >, and allow Promodo to use this information for marketing purposes.
         </p>
+      </div>
       </form>
     </div>
   </div>
